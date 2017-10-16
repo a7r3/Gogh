@@ -168,7 +168,7 @@ set_gogh () {
     string_r="${string%???}"
     string_s=${string_r//\./_}
     result="${string_s^}"
-    export {PROFILE_NAME,PROFILE_SLUG}=$result && source <(wget -O- https://raw.githubusercontent.com/Mayccoll/Gogh/master/themes/$1)
+    export {PROFILE_NAME,PROFILE_SLUG}=$result && source test.sh
 }
 
 ### Get length of an array
